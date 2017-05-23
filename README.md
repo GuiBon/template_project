@@ -1,24 +1,11 @@
-# README
+# Template Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
 
-Things you may want to cover:
+- [Rename the project](#rename_project)
 
-* Ruby version
+## Rename the project
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To rename the project, change the project name in the 2 following files:
+- package.json (The name of the package)
+- config/application.rb (The name of the module)
