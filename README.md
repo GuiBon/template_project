@@ -2,11 +2,7 @@
 
 ## Table of Contents
 
-<!-- START doctoc -->
-
 - [Rename the project](#rename-the-project)
-
-<!-- END doctoc -->
 
 ## Rename the project
 
