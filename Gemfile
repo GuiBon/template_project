@@ -21,6 +21,10 @@ gem 'coffee-rails', '~> 4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
+# Use pronto to run the linters at commit level
+gem 'pronto'
+gem 'pronto-rubocop', require: false
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
@@ -45,16 +49,6 @@ gem 'turbolinks', '~> 5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
-
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-
-  gem 'selenium-webdriver'
-end
-
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 
@@ -67,6 +61,16 @@ group :development do
 end
 
 group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
+
+  gem 'selenium-webdriver'
+end
+
+group :development, :production do
   # Use mysql2 as the database for Active Record
   gem 'mysql2'
 end
