@@ -32,7 +32,7 @@ The project use the package [ESlint](https://github.com/eslint/eslint) as a Java
 
 To see the result of the linting, just launch the command:
 ```sh
-$ node_modules/.bin/eslint --ext .js [file]
+$ node_modules/.bin/eslint --ext .js app/assets/javascript/
 ```
 ESlint behaviors can be configured via [.eslintrc.yml](https://github.com/Havlicech/template_project/blob/master/.eslintrc.yml)
 
