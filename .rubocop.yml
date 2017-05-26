@@ -4,6 +4,7 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'vendor/**/*'
+    - 'node_modules/**/*'
   DisplayCopNames: true
 Metrics/LineLength:
   Max: 120
