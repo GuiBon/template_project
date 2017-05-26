@@ -1,5 +1,9 @@
 # Template Project
 
+Configuring a project can be long depending on how you want it clean, scalable and secure (test, linter, security, database, deployment, authentication, and more ...)
+
+To avoid configuring multiple time new rails project I have decided to create a template of a project with everything I need already configured.
+
 ## Table of Contents
 
 - [Rename the project](#rename-the-project)
