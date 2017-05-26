@@ -1,5 +1,8 @@
 {
   "name": "template_project",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
 }
