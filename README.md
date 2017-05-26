@@ -6,6 +6,7 @@
 - [Ruby Linter](#ruby-linter)
 - [Javascript Linter](#javascript-linter)
 - [Linter and git](#linter-and-git)
+- [License](#license)
 
 ## Rename the project
 
@@ -36,6 +37,8 @@ $ node_modules/.bin/eslint --ext .js app/assets/javascript/
 ```
 ESlint behaviors can be configured via [.eslintrc.yml](https://github.com/Havlicech/template_project/blob/master/.eslintrc.yml)
 
+Note that you might need to [allow some global variable](http://eslint.org/docs/user-guide/configuring#specifying-globals) in your javascript file in order to pass the linter.
+
 ESlint has been added in a [git hook pre commit](#enable-pre-commit-hook) to avoid running it manually every time.
 
 ## Linter and git
@@ -60,3 +63,7 @@ To avoid the linting of the code before a commit run the git command with the -n
 ```sh
 $ git commit -n -m 'Commit message'
 ```
+
+## License
+
+See [License](https://github.com/Havlicech/template_project/blob/master/LICENSE) for more details.
