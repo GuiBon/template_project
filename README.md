@@ -21,6 +21,8 @@ To see the result of the linting, just launch the command:
 $ rubocop
 ```
 
+Rubocop behaviors can be configured via [.rubocop.yml](https://github.com/Havlicech/template_project/blob/master/.rubocop.yml)
+
 ## Linter and git
 
 Git hooks are a way to fire custom scripts before certain git command. In our case, we use got hooks to run linters before every commit.
