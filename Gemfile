@@ -21,10 +21,6 @@ gem 'coffee-rails', '~> 4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-# Use pronto to run the linters at commit level
-gem 'pronto'
-gem 'pronto-rubocop', require: false
-
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
