@@ -51,8 +51,6 @@ node_modules/.bin/eslint -v >/dev/null 2>&1 || { echo >&2 "${red}[Javascript Sty
 # Get only the javascript staged files
 JS_FILES="$(git diff --cached --name-only --diff-filter=AMC | grep ".js" | tr '\n' ' ')"
 
-echo "hello"
-echo ${JS_FILE}
 echo "${green}[Javascript Style][Info]: Checking Javascript Style${NC}"
 
 if [ -n "$JS_FILES" ]; then
