@@ -5,6 +5,7 @@ AllCops:
     - 'db/**/*'
     - 'vendor/**/*'
     - 'node_modules/**/*'
+    - 'tmp/**/*'
   DisplayCopNames: true
 Metrics/LineLength:
   Max: 120
