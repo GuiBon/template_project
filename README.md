@@ -4,6 +4,7 @@
 
 - [Rename the project](#rename-the-project)
 - [Ruby Linter](#ruby-linter)
+- [Javascript Linter](#javascript-linter)
 - [Linter and git](#linter-and-git)
 
 ## Rename the project
@@ -23,13 +24,27 @@ $ rubocop
 
 Rubocop behaviors can be configured via [.rubocop.yml](https://github.com/Havlicech/template_project/blob/master/.rubocop.yml)
 
+Rubocop has been added in a [git hook pre commit](#enable-pre-commit-hook) to avoid running it manually every time.
+
+## Javascript Linter
+
+The project use the package [ESlint](https://github.com/eslint/eslint) as a Javascript linter.
+
+To see the result of the linting, just launch the command:
+```sh
+$ node_modules/.bin/eslint --ext .js [file]
+```
+ESlint behaviors can be configured via [.eslintrc.yml](https://github.com/Havlicech/template_project/blob/master/.eslintrc.yml)
+
+ESlint has been added in a [git hook pre commit](#enable-pre-commit-hook) to avoid running it manually every time.
+
 ## Linter and git
 
 Git hooks are a way to fire custom scripts before certain git command. In our case, we use got hooks to run linters before every commit.
 
 Fire the linter before commit is a good way to ensure that the versionned code will be clean at all time.
 
-### Enable pre-commit hook
+### Enable pre commit hook
 
 To run the linters before every commit on the changed file just run the following command in the template_project directory:
 ```sh
@@ -37,7 +52,7 @@ $ sudo mv pre-commit .git/hooks/
 ```
 Then, before each git commit command, you will see the linters works.
 
-### Disable pre-commit hook
+### Disable pre commit hook
 
 Avoiding the pre-commit hook should be done only when a quick fix need to be done.
 
